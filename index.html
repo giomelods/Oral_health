@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .tm-social {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+    <title>bootstrap</title>
+    <!--Link para pegar o estilo CSS dos servidores do Bootstrap-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--Menu-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+        <a class="navbar-brand" href="#">Oral health</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-light" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+               
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!--Menu-->
+
+    <!--Carousel-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assents/img/dentista.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="assents/img/gioeenzo.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="assents/img/sorriso.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </button>
+    </div>
+
+    <!--Carousel-->
+
+    <!--Jumbotron-->
+    <div class="jumbotron jumbotron-fluid bg-danger text-light">
+        <div class="container">
+            <h1 class="display-4">Saúde Bucal</h1>
+            <p class="lead">Ao deixar de lado a higiene da boca, há, naturalmente, um acúmulo das bactérias nessa área. Com o tempo, elas se proliferam e chegam a quantidades absurdas, prejudicando o estado dos dentes e causando problemas na gengiva.</p>
+        </div>
+    </div>
+    <!--Jumbotron-->
+
+    <!--Cards-->
+    <div class="container">
+        <div class="card-columns">
+            <div class="card">
+                <img src="assents/img/dicas.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Cuidados necessários</h5>
+                    <p class="card-text">Cuidar da saúde da boca é mais simples do que parece. Basta fazer uma boa escovação com os produtos corretos, ir ao dentista regularmente e corrigir alguns maus hábitos, como:
+                        Esquecer de escovar os dentes, não passar fio dental,comer muitos doces, fumar e consumir álcool.</p>
+                </div>
+            </div>
+            <div class="card p-3">
+                <blockquote class="blockquote mb-0 card-body">
+                    <p>Ao consultar um dentista, serão examinadas todas as estruturas bucais (dentes, gengiva, língua, bochechas).</p>
+                   
+                </blockquote>
+            </div>
+            <div class="card">
+                <img src="assents/img/Uso-diario-do-fio-dental.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Passe fio dental</h5>
+                    <p class="card-text">É recomendado que o uso do fio dental seja diário, 1 a 2 vezes por dia, no entanto o ideal é que seja usado após todas as refeições principais.
+                    </p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card bg-primary text-white text-center p-3">
+                <blockquote class="blockquote mb-0">
+                    <p>O uso do fio dental é importante para remover restos de alimentos que não conseguiram ser removidos por meio da escovação normal, ajudando a evitar a formação de placas bacterianas e tártaros e diminuindo o risco de cáries e inflamação da gengiva..</p>
+                    <footer class="blockquote-footer text-white">
+                        <small>
+                            Uso correto <cite title="Source Title">Fio dental</cite>
+                        </small>
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="card text-center">
+                <div class="card-body">
+                    <h5 class="card-title">Escovação</h5>
+                    <p class="card-text">Para evitar o desenvolvimento de cáries e da placa bacteriana nos dentes é fundamental escovar os dentes pelo menos 2 vezes ao dia, sendo que uma delas deve ser sempre antes de dormir, pois durante a noite há maior chance das bactérias se acumularem na boca.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assents/img/infantil.jpg" class="card-img" alt="...">
+            </div>
+            <div class="card p-3 text-right">
+                <blockquote class="blockquote mb-0">
+                    <p>Que tipo de escova dental devo usar? A maioria dos dentistas concorda que a escova dental de cerdas macias é a melhor para a remoção da placa bacteriana e dos resíduos de alimentos.</p>
+                </blockquote>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+
+        <!--Cards-->
+
+        <!--Texto e video-->
+        <div class="row mt-5 mb-5">
+            <div class="col-md-6">
+                <h3>Por que cuidar da saúde bucal é tão importante?</h3>
+                <p>Segundo a Organização Mundial da Saúde (OMS), a saúde bucal é importantíssima. Pois se deixada de
+                    lado, fungos e bactérias podem se proliferar e acabar por atingindo outros órgãos e suas funções,
+                    trazendo doenças sérias. Assim, incluir ações simples na rotina é a forma ideal para manter uma boa
+                    saúde bucal.
+
+                    Controlar a ingestão de alimentos doces é uma das opções. Além disso, é preciso escovar os dentes
+                    todos os dias, após cada refeição e também uma última vez antes de dormir. É importante também
+                    utilizar uma escova de dente de tamanho adequado e com cerdas macias, além de creme dental com
+                    flúor.
+
+
+
+                </p>
+            </div>
+            <div class="col-md-6">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/iUgQwTXydtk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <!--Texto e video-->
+
+<!--Imagens-->
+
+
+
+<!--Imagens-->
+
+    <hr>
+    <!--Rodapé-->
+    <footer>
+
+        <div class="row mb-3">
+            <div class="col-md-12 d-flex justify-content-center">
+
+                <a href="www.linkedin.com/in/giovanna-melo-da-silva-408b82167" target="_blank" class="p-3">
+                    <img class="tm-social" src="assents/img/linkedim.png" alt="Logo do Linkedim">
+                </a>
+
+                <a href="https://github.com/giomelods" target="_blank" class="p-3">
+                    <img class="tm-social" src="assents/img/github.png" alt="Logo do GitHub">
+                </a>
+
+                <a href="https://www.instagram.com/gio.melos/" target="_blank" class="p-3">
+                    <img class="tm-social" src="assents/img/insta.jfif" alt="Logo do Instagram">
+                </a>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-center">
+                    Todos os direitos reservados: Giovanna Melo &copy;
+                    Créditos do texto: https://minhasaude.proteste.org.br/importancia-saude-bucal/
+                </p>
+            </div>
+        </div>
+
+    </footer>
+    <!--Rodapé-->
+
+
+    <!--Scripts necessários para utilização dos códigos JS do Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
