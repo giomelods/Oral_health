@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .tm-social {
+        
+           .tm-social {
             width: 50px;
             height: 50px;
         }
@@ -33,18 +34,20 @@
                 <li class="nav-item active">
                     <a class="nav-link text-light" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
-               
-                <li class="nav-item dropdown">
-                    <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="#cuidados">Cuidados</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="#dicas">Dicas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="#contato">Fale conosco</a>
+            </li>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-light" href="#redes">Redes Sociais</a>
+        </li>
                 </li>
 
             </ul>
@@ -97,7 +100,7 @@
 
     <!--Cards-->
     <div class="container">
-        <div class="card-columns">
+        <div id="cuidados" class="card-columns">
             <div class="card">
                 <img src="assents/img/dicas.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -147,18 +150,15 @@
                 </blockquote>
             </div>
             <div class="card">
-                <div class="card-body">
-                    
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
+              
             </div>
         </div>
-
+<hr>
         <!--Cards-->
 
         <!--Texto e video-->
-        <div class="row mt-5 mb-5">
-            <div class="col-md-6">
+        <div class="row mt-5 mb-6">
+            <div id="dicas" class="col-md-6">
                 <h3>Por que cuidar da saúde bucal é tão importante?</h3>
                 <p>Segundo a Organização Mundial da Saúde (OMS), a saúde bucal é importantíssima. Pois se deixada de
                     lado, fungos e bactérias podem se proliferar e acabar por atingindo outros órgãos e suas funções,
@@ -190,7 +190,52 @@
 
 <!--Imagens-->
 
+<!--Endereço-->
 
+
+
+<hr>
+<div id="contato" class="row mt-5 mb-6 jumbotron bg-danger text-light">
+<div class="col-md-6">
+    <form>
+        <div class="form-group">
+            <h3> Fale conosco </h3>
+            <p>Nos envie um email com suas dúvidas, você também pode nos constatar via Instagram no link no
+                final da
+                página.</p>
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com"
+                onkeyup="validaEmail()">
+            <div id="txtEmail"></div>
+
+            <label for="nome">Nome:</label>
+            <input type="text" class="form-control" id="nome" onkeyup="validaNome()" placeholder="Anna Santos">
+            <div id="txtNome"></div>
+        </div>
+
+        <div class="form-group ">
+            <label for="mensagem">Mensagem</label>
+            <textarea class="form-control" id="mensagem" onkeyup="validaMensagem()" rows="3"></textarea>
+            <div id="txtMensagem"></div>
+        </div>
+
+        <div class="btn btn-dark">
+            <button type="button" class="btn btn-dark" onclick="enviar()"
+                onkeyup="validaEmail()">Enviar</button>
+        </div>
+    </form>
+</div>
+<div class="col-md-6">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.2586528534507!2d-46.785924085020326!3d-23.666706484630755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce53a66b7dea95%3A0x9c56414edd7b1a2!2sEstr.%20de%20Itapecerica%2C%205860%20-%20Vila%20das%20Belezas%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005858-000!5e0!3m2!1spt-BR!2sbr!4v1656333225879!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+      
+</div>
+</div>
+
+
+
+
+
+<!--Endereço-->
 
 <!--Imagens-->
 
@@ -198,7 +243,7 @@
     <!--Rodapé-->
     <footer>
 
-        <div class="row mb-3">
+        <div id="redes" class="row mb-3">
             <div class="col-md-12 d-flex justify-content-center">
 
                 <a href="www.linkedin.com/in/giovanna-melo-da-silva-408b82167" target="_blank" class="p-3">
